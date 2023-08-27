@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Searching Application</title>
+    <!-- <link rel="stylesheet" href="images.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='images.css') }}" type="text/css">
+
+</head>
+<body>
+    <h1>Search for Images</h1>
+
+    <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search for images">
+        <button type="submit" id="search-button">Search</button>
+    </form>
+
+    <div class="search-results">
+      <div class="searcch-res">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1691960547805-7143654bd06b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
+          alt="adamiani"
+        />
+        <a href="https://unsplash.com/photos/ihIKOg_lHgI" target="_blank"
+          >mushrooms</a
+        >
+      </div>
+      <div class="searcch-res">
+        <img
+          src="https://images.unsplash.com/photo-1682685797661-9e0c87f59c60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60"
+          alt="adamiani"
+        />
+        <a href="https://unsplash.com/photos/ihIKOg_lHgI" target="_blank"
+          >human</a
+        >
+      </div>
+      <div class="searcch-res">
+        <img
+          src="https://images.unsplash.com/photo-1691853533232-78d352cf6d25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80"
+          alt="adamiani"
+        />
+        <a href="https://unsplash.com/photos/ihIKOg_lHgI" target="_blank"
+          >old boulding</a
+        >
+      </div>
+    </div>
+    <section class="footer">
+      <nav class="nav-bar__items">
+          <ul>
+              <li>
+                  <a href="/index.html"  class="photographer">Photographer</a>
+              </li>
+              <li>
+                  <a href="/About Us/about.html"  class="aboutus">About Us</a>
+              </li>
+              <li>
+                  <a href="/imagespage/images.html" class="images">Images</a>
+              </li>
+              <li>
+                  <a href="/signup/sigup.html" class="signup">Sign Up</a>
+              </li>
+          </ul>
+          <ul>
+              <li>
+                  <a href="/"  class="gmail">user@gmail.com</a>
+              </li>
+              <li>
+                  <a href="/"  class="facebook">facebook</a>
+              </li>
+              <li>
+                  <a href="/imagespage/images.html" class="instagram">instagram</a>
+              </li>
+              <li>
+                  <a href="/signup/sigup.html" class="github">github</a>
+              </li>
+          </ul>
+      </nav>
+    </section>
+    <div class="icons">
+      <ul>
+        <li>
+          <ion-icon name="mail"></ion-icon>
+        </li>
+        <li>
+          <ion-icon name="logo-instagram"></ion-icon>
+        </li>
+        <li>
+          <ion-icon name="logo-facebook"></ion-icon>
+        </li>
+        <li>
+          <ion-icon name="logo-github"></ion-icon>
+        </li>
+      </ul>
+    </div>
+
+    <button id="show-more-button">Show More</button>
+
+    <script src="images.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

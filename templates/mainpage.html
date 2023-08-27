@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='mainpage.css') }}" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>wikipedia search</h1>
+        <div class="sidenav">
+            <a href="#">Profile</a>
+            <a href="#">Wikipedia</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+            <a href="#" class="logout">logout</a>
+        </div>
+    </header>
+
+    <section>
+        <form action="{{ url_for('mainpage')}}" method="post">
+            <div class="search_items">
+                <div class="display_results">
+                        {% if result %}
+                            {% if result.error %}
+                                <p>Error: {{ result.error }}</p>
+                            {% else %}
+                                <h2>{{ result.title }}</h2>
+                                <p>{{ result.summary }}</p>
+                            {% endif %}
+                        {% endif %}
+                </div>
+                 <input type="text" name="quiry" id="quiry" placeholder="what are you interested in?">
+                 <input type="submit" name="submit">
+            </div>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" type="text/css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">Photographer</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="/" class="home">Home</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('about') }}"  class="aboutus">About Us</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('images')}}" class="images">Images</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('signup')}}" class="signup">Sign In</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- hero section -->
+    <div class="main">
+        <div class="main__conteiner">
+            <div class="main__content">
+                <h1>NEXT GENERATION</h1>
+                <h2>TECHNOLOGY</h2>
+                <p>lets see what makes us different</p>
+                <button class="main__btn"><a href="/">Get Started</a></button>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1499417267106-45cebb7187c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGhvdG9ncmFwaGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="img" id="main__img">
+            </div>
+        </div>
+        <div class="second__main">
+            <div class="second__main__content">
+                <img src="https://images.unsplash.com/photo-1490638114763-02630949efda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBob3RvZ3JhcGhlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Photographer">
+                <button><a href="/About Us/about.html">Photography</a></button>
+                <p>Check out the new camera</p>
+            </div>
+        </div>
+        <div class="third__main">
+            <div class="third__main__content">
+                <h1>Beauty of Nature</h1>
+                <p>Everyday technology reaches new levels <br>and it allowes us to capture the <br>most unique moments</p>
+                <img src="https://images.unsplash.com/photo-1473773508845-188df298d2d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="forest">
+            </div>
+        </div>
+    </div>
+    <section class="footer">
+        <nav class="nav-bar__items">
+            <ul>
+                <li>
+                    <a href="{{ url_for('index')}}"  class="photographer">Photographer</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('about')}}"  class="aboutus">About Us</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('images')}}" class="images">Images</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('signup')}}" class="signup">Sign Up</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="/"  class="gmail">user@gmail.com</a>
+                </li>
+                <li>
+                    <a href="/"  class="facebook">facebook</a>
+                </li>
+                <li>
+                    <a href="/imagespage/images.html" class="instagram">instagram</a>
+                </li>
+                <li>
+                    <a href="/signup/sigup.html" class="github">github</a>
+                </li>
+            </ul>
+        </nav>
+      </section>
+      <div class="icons">
+        <ul>
+          <li>
+            <ion-icon name="mail"></ion-icon>
+          </li>
+          <li>
+            <ion-icon name="logo-instagram"></ion-icon>
+          </li>
+          <li>
+            <ion-icon name="logo-facebook"></ion-icon>
+          </li>
+          <li>
+            <ion-icon name="logo-github"></ion-icon>
+          </li>
+        </ul>
+      </div>
+  
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
